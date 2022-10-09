@@ -18,8 +18,6 @@ info:
 -estoy aprendiendo python
 
 
-Mi linkedin
-www.linkedin.com/in/homero-cabrera-araque-356414219
 
 
 
