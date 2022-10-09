@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/23020718/194733112-e48d564a-9cd1-49ac-bebc-6fc882feb270.jpg" height="128">
+  <!--<img src="https://user-images.githubusercontent.com/23020718/194733112-e48d564a-9cd1-49ac-bebc-6fc882feb270.jpg" height="128">-->
   <h2 align="center">Homero Cabrera Araque</h2>
   <p align="center">Desarrollador de software<p>
 </p>
