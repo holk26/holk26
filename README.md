@@ -113,6 +113,3 @@ reactJS me parece genial y me gustaria trabajar con react.</div>
                 />
             </a></div>
 <br />
-
-----
-<div align="center">Generated using <a href="https://profilinator.rishav.dev/" target="_blank">Github Profilinator</a></div>
