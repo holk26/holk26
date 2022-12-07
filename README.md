@@ -105,7 +105,7 @@
 <br/>  
 
 <div align="center">
-            <a href="https://paypal.me/paypal.me/holk26" target="_blank" style="display: inline-block;">
+            <a href="https://paypal.me/holk26?country.x=CO&locale.x=es_XC" target="_blank" style="display: inline-block;">
                 <img
                     src="https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal" 
                     align="center"
