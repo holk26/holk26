@@ -2,7 +2,7 @@
 <img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
 </div>  
 
-### <div align="center">Soy tecnólogo en análisis y desarrollo de sistemas de información, actualmente estudiante de ingeniería e software 7TO semestre y aprendo rápido y me apasiona la tecnología. Me encanta el desarrollo web, Móvil y simplificar los procesos. actualmente estoy trabajando realizando automatizaciones con C#. y reactJS me parece genial. estoy buscando nuevos retos</div>  
+### <div align="center">Soy tecnólogo en análisis y desarrollo de sistemas de información, actualmente estudiante de ingeniería e software 7TO semestre y aprendo rápido y me apasiona la tecnología. Me encanta el desarrollo web, Móvil y simplificar los procesos. actualmente estoy trabajando realizando automatizaciones con C#, python y reactJS me parece genial. estoy buscando nuevos retos</div>  
   
 
 - 🌱 Actualmente buscando nuevos desafios  
