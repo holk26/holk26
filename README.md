@@ -113,3 +113,4 @@
             </a></div>
 <br />
 https://github.com/antimatter15/alpaca.cpp
+https://huggingface.co/Sosaka/Alpaca-native-4bit-ggml/blob/main/ggml-alpaca-7b-q4.bin
