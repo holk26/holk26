@@ -1,18 +1,29 @@
 <div align="center">
 <img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
-</div>  
+</div>
 
-### <div align="center">Soy un profesional en Desarrollo de Software y Tecnólogo en Análisis y Desarrollo de Sistemas de Información con experiencia en asesoría y servicio al cliente, automatización de procesos, pruebas de funcionamiento y manejo de bases de datos. Domino lenguajes como C#, PHP, Python, JavaScript, HTML y CSS, así como herramientas como SQL Server, MySQL, Oracle y Visual Studio. Me enfoco en obtener resultados, planificar y buscar mejoras continuas.</div>  
-  
+### <div align="center">I am a Software Development professional and a Technologist in Information Systems Analysis and Development, with experience in customer service, process automation, functionality testing, and database management. I am proficient in languages like C#, PHP, Python, JavaScript, HTML, and CSS, as well as tools like SQL Server, MySQL, Oracle, and Visual Studio. I focus on delivering results, planning, and seeking continuous improvements.</div>
 
-- 🌱 Actualmente buscando nuevos desafios  
-  
+- 🌱 Currently looking for new challenges
 
-- ❓ Pregúntame sobre automatizaciones   
-  
+- ❓ Ask me about automation
 
-- ⚡ Dato curios: uso tabulación sobre espacios  
-  
+- ⚡ Fun fact: I prefer tabs over spaces
+
+
+<br/>
+
+<div align="center">
+<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
+</div>
+
+### <div align="center">Soy un profesional en Desarrollo de Software y Tecnólogo en Análisis y Desarrollo de Sistemas de Información con experiencia en asesoría y servicio al cliente, automatización de procesos, pruebas de funcionamiento y manejo de bases de datos. Domino lenguajes como C#, PHP, Python, JavaScript, HTML y CSS, así como herramientas como SQL Server, MySQL, Oracle y Visual Studio. Me enfoco en obtener resultados, planificar y buscar mejoras continuas.</div>
+
+- 🌱 Actualmente buscando nuevos desafíos
+
+- ❓ Pregúntame sobre automatizaciones
+
+- ⚡ Dato curioso: uso tabulación sobre espacios
 
 <br/>  
 
