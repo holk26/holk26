@@ -118,13 +118,13 @@ Soy un **profesional en Desarrollo de Software** y **Tecnólogo en Análisis y D
 ## 🌐 Connect with me | Conéctate conmigo
 
 <div align="center">
-<a href="https://github.com/holk26" target="_blank">
+<a href="https://github.com/holk26" target="_blank" rel="noopener noreferrer">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://linkedin.com/in/homero-cabrera-araque-356414219/" target="_blank">
+<a href="https://linkedin.com/in/homero-cabrera-araque-356414219/" target="_blank" rel="noopener noreferrer">
 <img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
 </a>
-<a href="https://dev.to/holk26" target="_blank">
+<a href="https://dev.to/holk26" target="_blank" rel="noopener noreferrer">
 <img src=https://img.shields.io/badge/dev.to-%2308090A.svg?&style=for-the-badge&logo=dev.to&logoColor=white alt=devto style="margin-bottom: 5px;" />
 </a>
 </div>  
@@ -164,7 +164,7 @@ Soy un **profesional en Desarrollo de Software** y **Tecnólogo en Análisis y D
 <div align="center">
   <p>If you like my work and want to support me, consider buying me a coffee! ☕</p>
   <p>¡Si te gusta mi trabajo y quieres apoyarme, considera invitarme un café! ☕</p>
-  <a href="https://paypal.me/holk26?country.x=CO&locale.x=es_XC" target="_blank">
+  <a href="https://paypal.me/holk26?country.x=CO&locale.x=es_XC" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Donate-PayPal-00457C.svg?style=for-the-badge&logo=paypal&logoColor=white" align="center" />
   </a>
 </div>
