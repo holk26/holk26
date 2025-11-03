@@ -1,39 +1,72 @@
 <div align="center">
-<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
+  <img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
+  <h1>👋 ¡Hola! I'm Homero Cabrera</h1>
+  <h3>💻 Full Stack Developer | 🚀 Automation Enthusiast | 🌐 Technology Innovator</h3>
 </div>
-
-### <div align="center">I am a Software Development professional and a Technologist in Information Systems Analysis and Development, with experience in customer service, process automation, functionality testing, and database management. I am proficient in languages like C#, PHP, Python, JavaScript, HTML, and CSS, as well as tools like SQL Server, MySQL, Oracle, and Visual Studio. I focus on delivering results, planning, and seeking continuous improvements.</div>
-
-- 🌱 Currently looking for new challenges
-
-- ❓ Ask me about automation
-
-- ⚡ Fun fact: I prefer tabs over spaces
-
 
 <br/>
 
-<div align="center">
-<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
-</div>
+## 📖 About Me | Sobre Mí
 
-### <div align="center">Soy un profesional en Desarrollo de Software y Tecnólogo en Análisis y Desarrollo de Sistemas de Información con experiencia en asesoría y servicio al cliente, automatización de procesos, pruebas de funcionamiento y manejo de bases de datos. Domino lenguajes como C#, PHP, Python, JavaScript, HTML y CSS, así como herramientas como SQL Server, MySQL, Oracle y Visual Studio. Me enfoco en obtener resultados, planificar y buscar mejoras continuas.</div>
+<table>
+<tr>
+<td width="50%" valign="top">
 
-- 🌱 Actualmente buscando nuevos desafíos
+### 🌍 English
 
-- ❓ Pregúntame sobre automatizaciones
+I am a **Software Development professional** and a **Technologist in Information Systems Analysis and Development**, with extensive experience in:
 
-- ⚡ Dato curioso: uso tabulación sobre espacios
+- 👨‍💼 Customer service and consulting
+- ⚙️ Process automation
+- 🧪 Functionality testing
+- 🗄️ Database management
+
+**Technical Expertise:**
+- 💻 Languages: C#, PHP, Python, JavaScript, HTML, CSS
+- 🛠️ Tools: SQL Server, MySQL, Oracle, Visual Studio
+- 🎯 Focus: Results-driven, strategic planning, continuous improvement
+
+**Current Status:**
+- 🌱 Actively seeking new challenges and opportunities
+- 💡 Ask me about automation and process optimization
+- ⚡ Fun fact: I prefer tabs over spaces 😄
+
+</td>
+<td width="50%" valign="top">
+
+### 🌎 Español
+
+Soy un **profesional en Desarrollo de Software** y **Tecnólogo en Análisis y Desarrollo de Sistemas de Información**, con amplia experiencia en:
+
+- 👨‍💼 Asesoría y servicio al cliente
+- ⚙️ Automatización de procesos
+- 🧪 Pruebas de funcionamiento
+- 🗄️ Manejo de bases de datos
+
+**Experiencia Técnica:**
+- 💻 Lenguajes: C#, PHP, Python, JavaScript, HTML, CSS
+- 🛠️ Herramientas: SQL Server, MySQL, Oracle, Visual Studio
+- 🎯 Enfoque: Obtención de resultados, planificación, mejora continua
+
+**Estado Actual:**
+- 🌱 Buscando activamente nuevos desafíos y oportunidades
+- 💡 Pregúntame sobre automatizaciones y optimización de procesos
+- ⚡ Dato curioso: Uso tabulación sobre espacios 😄
+
+</td>
+</tr>
+</table>
 
 <br/>  
 
 
-## My Skill Set  
+## 🛠️ My Skill Set | Mis Habilidades
+
 <table><tr><td valign="top" width="33%">
 
 
 
-### Frontend  
+### 🎨 Frontend  
 <div align="center">  
 <a href="https://reactjs.org/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/react-original-wordmark.svg" alt="React" height="50" /></a>  
 <a href="https://getbootstrap.com/docs/3.4/javascript/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/bootstrap-plain.svg" alt="Bootstrap" height="50" /></a>  
@@ -49,7 +82,7 @@
 
 
 
-### Backend  
+### ⚙️ Backend  
 <div align="center">  
 <a href="https://www.javascript.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/javascript-original.svg" alt="JavaScript" height="50" /></a>  
 <a href="https://www.php.net/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/php-original.svg" alt="PHP" height="50" /></a>  
@@ -67,7 +100,7 @@
 
 
 
-### DevOps  
+### 🚀 DevOps  
 <div align="center">  
 <a href="https://aws.amazon.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/amazonwebservices-original-wordmark.svg" alt="AWS" height="50" /></a>  
 <a href="https://cloud.google.com/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/google_cloud-icon.svg" alt="GCP" height="50" /></a>  
@@ -82,46 +115,65 @@
 <br/>  
 
 
-## Connect with me  
+## 🌐 Connect with me | Conéctate conmigo
+
 <div align="center">
-<a href="https://github.com/holk26" target="_blank">
+<a href="https://github.com/holk26" target="_blank" rel="noopener noreferrer">
 <img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://dev.to/holk26" target="_blank">
+<a href="https://linkedin.com/in/homero-cabrera-araque-356414219/" target="_blank" rel="noopener noreferrer">
+<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
+</a>
+<a href="https://dev.to/holk26" target="_blank" rel="noopener noreferrer">
 <img src=https://img.shields.io/badge/dev.to-%2308090A.svg?&style=for-the-badge&logo=dev.to&logoColor=white alt=devto style="margin-bottom: 5px;" />
 </a>
-<a href="https://linkedin.com/in/homero-cabrera-araque-356414219/" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>  
 </div>  
   
 
 <br/>  
 
 
-## Github Stats  
-<div align="center"><img src="https://github-readme-stats.vercel.app/api?username=holk26&show_icons=true&count_private=true&hide_border=true" align="center" /></div>  
-
-<br/>  
-
-<div align="center"><img src="https://spotify-github-profile.vercel.app/api/view?uid=holk26&cover_image=true&theme=default&show_offline=false&background_color=121212&bar_color=53b14f&bar_color_cover=false" /></div>  
-
-<br/>  
+## 📊 GitHub Stats | Estadísticas de GitHub
 
 <div align="center">
-<img src="https://komarev.com/ghpvc/?username=holk26&&style=flat-square" align="center" />
+  <img src="https://github-readme-stats.vercel.app/api?username=holk26&show_icons=true&count_private=true&hide_border=true&theme=radical" align="center" style="width: 49%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=holk26&theme=radical&hide_border=true" align="center" style="width: 49%" />
+</div>
+
+<br/>
+
+## 🎵 Currently Listening | Escuchando Actualmente
+
+<div align="center">
+  <img src="https://spotify-github-profile.vercel.app/api/view?uid=holk26&cover_image=true&theme=default&show_offline=false&background_color=121212&bar_color=53b14f&bar_color_cover=false" />
+</div>
+
+<br/>
+
+## 👀 Profile Views | Visitas al Perfil
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=holk26&style=for-the-badge&color=blueviolet" align="center" />
 </div>  
   
 
 <br/>  
 
+## 💝 Support My Work | Apoya Mi Trabajo
+
 <div align="center">
-            <a href="https://paypal.me/holk26?country.x=CO&locale.x=es_XC" target="_blank" style="display: inline-block;">
-                <img
-                    src="https://img.shields.io/badge/Donate-PayPal-blue.svg?style=flat-square&logo=paypal" 
-                    align="center"
-                />
-            </a></div>
-<br />
-https://github.com/antimatter15/alpaca.cpp
-https://huggingface.co/Sosaka/Alpaca-native-4bit-ggml/blob/main/ggml-alpaca-7b-q4.bin
+  <p>If you like my work and want to support me, consider buying me a coffee! ☕</p>
+  <p>¡Si te gusta mi trabajo y quieres apoyarme, considera invitarme un café! ☕</p>
+  <a href="https://paypal.me/holk26?country.x=CO&locale.x=es_XC" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/Donate-PayPal-00457C.svg?style=for-the-badge&logo=paypal&logoColor=white" align="center" />
+  </a>
+</div>
+
+<br/>
+
+---
+
+<div align="center">
+  <p><i>⭐ From <a href="https://github.com/holk26">holk26</a> with ❤️</i></p>
+  <p><i>"Code is like humor. When you have to explain it, it's bad." – Cory House</i></p>
+</div>
