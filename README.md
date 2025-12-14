@@ -156,7 +156,7 @@ Soy un **profesional en Desarrollo de Software** y **Tecnólogo en Análisis y D
   <img src="https://komarev.com/ghpvc/?username=holk26&style=for-the-badge&color=blueviolet" align="center" />
 </div>  
   
-
+![](https://hit.yhype.me/github/profile?account_id=23020718)
 <br/>  
 
 ## 💝 Support My Work | Apoya Mi Trabajo
