@@ -1,0 +1,41 @@
+---
+interface Props {
+  certifications: string[];
+}
+const { certifications } = Astro.props;
+---
+
+<section>
+  <h2>Certifications</h2>
+  <ul class="cert-list">
+    {
+      certifications.map((cert) => (
+        <li>{cert}</li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .cert-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+    padding-left: 14px;
+  }
+
+  .cert-list li {
+    font-size: 9.5pt;
+    color: var(--color-text-muted);
+    position: relative;
+  }
+
+  .cert-list li::before {
+    content: '▪';
+    position: absolute;
+    left: -12px;
+    color: var(--color-accent);
+    font-size: 8pt;
+    top: 1px;
+  }
+</style>

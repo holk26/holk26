@@ -1,0 +1,47 @@
+---
+interface LanguageItem {
+  language: string;
+  level: string;
+}
+
+interface Props {
+  languages: LanguageItem[];
+}
+const { languages } = Astro.props;
+---
+
+<section>
+  <h2>Language Proficiency</h2>
+  <ul class="lang-list">
+    {
+      languages.map((lang) => (
+        <li>
+          <span class="lang-name">{lang.language}:</span>
+          <span class="lang-level">{lang.level}</span>
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  .lang-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .lang-list li {
+    font-size: 9.5pt;
+  }
+
+  .lang-name {
+    font-weight: 600;
+    color: var(--color-text);
+    margin-right: 4px;
+  }
+
+  .lang-level {
+    color: var(--color-text-muted);
+  }
+</style>

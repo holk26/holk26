@@ -1,0 +1,43 @@
+---
+interface Props {
+  skills: Record<string, string[]>;
+}
+const { skills } = Astro.props;
+---
+
+<section>
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    {
+      Object.entries(skills).map(([category, items]) => (
+        <div class="skill-group">
+          <span class="skill-category">{category}:</span>
+          <span class="skill-items">{items.join(' · ')}</span>
+        </div>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .skill-group {
+    font-size: 9.5pt;
+    line-height: 1.5;
+  }
+
+  .skill-category {
+    font-weight: 600;
+    color: var(--color-text);
+    margin-right: 4px;
+  }
+
+  .skill-items {
+    color: var(--color-text-muted);
+  }
+</style>

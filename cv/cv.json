@@ -1,0 +1,141 @@
+{
+  "personal": {
+    "name": "Homero Cabrera Araque",
+    "location": "Burnaby, BC, Canada",
+    "phone": "(1) 604-754-6694",
+    "email": "homero9726@gmail.com",
+    "linkedin": "https://linkedin.com/in/homero-cabrera-araque-356414219/",
+    "github": "https://github.com/holk26",
+    "workAuthorization": "Open Work Permit Holder"
+  },
+  "summary": "Experienced data solutions developer with a strong foundation in SQL Server, SSRS/SSIS, backup and restore strategies, performance tuning, and database monitoring. Background in software development using JavaScript (ReactJS), C#, and Dynamics 365 CRM. Skilled in data encryption, masking, and automation solutions. Proficient with cloud tools (Azure), Python, DAX, and Power Query. Open work permit holder, ready to contribute to dynamic teams in Canada.",
+  "skills": {
+    "Database Solutions & Administration": [
+      "SQL Server",
+      "SSRS",
+      "SSIS",
+      "Backup & Restore",
+      "Performance Tuning",
+      "Monitoring",
+      "Encryption",
+      "Data Masking",
+      "Ola Hallengren Scripts"
+    ],
+    "Programming Languages": [
+      "JavaScript",
+      "C#",
+      "Python",
+      "DAX",
+      "Power Query"
+    ],
+    "Web Development": [
+      "ReactJS",
+      "HTML",
+      "CSS",
+      "Django",
+      "ASP.NET"
+    ],
+    "Cloud Services": [
+      "Azure"
+    ],
+    "Automation & Tools": [
+      "Jenkins",
+      "Docker",
+      "RPA (Robotic Process Automation)"
+    ],
+    "DevOps": [
+      "CI/CD",
+      "Git",
+      "GitHub"
+    ],
+    "Methodologies": [
+      "Agile",
+      "Scrum"
+    ]
+  },
+  "certifications": [
+    "Foundational C# with Microsoft",
+    "Protect Your Business: Cybersecurity in Telework",
+    "Digitize Your Business Step by Step with Google Tools",
+    "Introduction to Web Development: HTML and CSS",
+    "React.JS, Guide from Zero"
+  ],
+  "experience": [
+    {
+      "title": "Software Developer",
+      "company": "Ufinet",
+      "location": "Bogotá, Colombia",
+      "startDate": "January 2024",
+      "endDate": "July 2024",
+      "bullets": [
+        "Developed and maintained software applications using JavaScript and C#.",
+        "Collaborated with cross-functional teams to design and implement new features.",
+        "Automated routine processes, enhancing efficiency and accuracy."
+      ]
+    },
+    {
+      "title": "BO Automation & Multicountry Analysis",
+      "company": "Telefónica",
+      "location": "Bogotá, Colombia",
+      "startDate": "March 2020",
+      "endDate": "January 2023",
+      "bullets": [
+        "Implemented database automation solutions using SSIS and T-SQL.",
+        "Designed and deployed reports with SSRS for various business units.",
+        "Managed backup and restore procedures and applied data encryption/masking policies.",
+        "Tuned SQL performance and implemented monitoring solutions.",
+        "Utilized Ola Hallengren scripts for maintenance and health checks.",
+        "Contributed to cloud-based data integration using Azure.",
+        "Built reports and dashboards with Power BI, Power Query, DAX, and Python."
+      ]
+    },
+    {
+      "title": "Data Analyst",
+      "company": "Town Hall – Gigante Huila",
+      "location": "Gigante, Huila, Colombia",
+      "startDate": "January 2018",
+      "endDate": "December 2019",
+      "bullets": [
+        "Analyzed data to support municipal projects and initiatives.",
+        "Developed software tools to improve data collection and analysis.",
+        "Collaborated with various departments to optimize workflows."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Software Engineering",
+      "institution": "Politécnico Grancolombiano",
+      "location": "Bogotá, Colombia",
+      "startDate": "2021",
+      "endDate": "2025",
+      "notes": "Studying advanced software engineering principles and practices. Working on projects involving software development and systems analysis."
+    },
+    {
+      "degree": "Technological Specialization in Mobile Application Development",
+      "institution": "National Learning Service (SENA)",
+      "location": "Garzón, Huila, Colombia",
+      "startDate": "July 2019",
+      "endDate": "June 2020",
+      "notes": "Specialized in developing mobile applications for various platforms."
+    },
+    {
+      "degree": "Technologist in Information Systems Analysis and Development",
+      "institution": "National Learning Service (SENA)",
+      "location": "Garzón, Huila, Colombia",
+      "startDate": "July 2015",
+      "endDate": "December 2017",
+      "notes": "Focused on information systems analysis and development."
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "level": "Native"
+    },
+    {
+      "language": "English",
+      "level": "Intermediate – Strong reading comprehension; basic conversational skills"
+    }
+  ]
+}
