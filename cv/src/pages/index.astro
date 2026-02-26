@@ -14,17 +14,19 @@ import cv from '../../cv.json';
 <Layout title={`${cv.personal.name} – CV`}>
   <main class="cv-page">
     <Header personal={cv.personal} />
-    <Summary summary={cv.summary} />
-    <Skills skills={cv.skills} />
-    <Experience experience={cv.experience} />
-    <Education education={cv.education} />
-    <Certifications certifications={cv.certifications} />
-    <Languages languages={cv.languages} />
+    <div class="cv-body">
+      <Summary summary={cv.summary} />
+      <Skills skills={cv.skills} />
+      <Experience experience={cv.experience} />
+      <Education education={cv.education} />
+      <Certifications certifications={cv.certifications} />
+      <Languages languages={cv.languages} />
+    </div>
   </main>
 
   <!-- Print button – hidden when printing -->
   <div class="print-btn-wrapper no-print">
-    <button onclick="window.print()" class="print-btn">🖨 Print / Save as PDF</button>
+    <button onclick="window.print()" class="print-btn" aria-label="Print or save CV as PDF">🖨&nbsp; Save as PDF</button>
   </div>
 </Layout>
 
@@ -32,26 +34,27 @@ import cv from '../../cv.json';
   .print-btn-wrapper {
     display: flex;
     justify-content: center;
-    margin: 16px 0 32px;
+    margin: 20px 0 40px;
   }
 
   .print-btn {
-    background: var(--color-accent);
+    background: var(--color-primary);
     color: #fff;
     border: none;
-    padding: 10px 28px;
+    padding: 11px 32px;
     font-size: 10pt;
     font-family: var(--font-main);
     font-weight: 600;
-    border-radius: 6px;
+    border-radius: 8px;
     cursor: pointer;
-    letter-spacing: 0.04em;
-    box-shadow: 0 2px 8px rgba(26, 58, 92, 0.3);
-    transition: background 0.2s;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 14px rgba(30, 58, 95, 0.35);
+    transition: background 0.2s, transform 0.1s;
   }
 
   .print-btn:hover {
-    background: var(--color-accent-light);
+    background: var(--color-primary-light);
+    transform: translateY(-1px);
   }
 
   @media print {
