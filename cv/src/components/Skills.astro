@@ -5,9 +5,9 @@ interface Props {
 const { skills } = Astro.props;
 ---
 
-<section>
+<div class="sidebar-section">
   <h2>Technical Skills</h2>
-  <div class="skills-grid">
+  <div class="skills-list">
     {
       Object.entries(skills).map(([category, items]) => (
         <div class="skill-group">
@@ -21,49 +21,66 @@ const { skills } = Astro.props;
       ))
     }
   </div>
-</section>
+</div>
 
 <style>
-  .skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px 16px;
+  .sidebar-section {
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--sidebar-border);
+  }
+
+  h2 {
+    font-size: 7.5pt;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sidebar-accent);
+    margin-bottom: 12px;
+    padding-left: 0;
+    border-left: none;
   }
 
   .skill-group {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .skill-group:last-child {
+    margin-bottom: 0;
   }
 
   .skill-category {
-    font-size: 8pt;
-    font-weight: 700;
-    letter-spacing: 0.06em;
+    display: block;
+    font-size: 7.5pt;
+    font-weight: 600;
+    color: var(--sidebar-text);
     text-transform: uppercase;
-    color: var(--color-primary);
+    letter-spacing: 0.05em;
+    margin-bottom: 4px;
   }
 
   .tag-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 3px;
   }
 
   .tag {
     display: inline-block;
-    font-size: 8pt;
+    font-size: 7.5pt;
     font-weight: 500;
-    color: var(--color-tag-text);
-    background: var(--color-tag-bg);
-    border-radius: 4px;
-    padding: 2px 7px;
-    line-height: 1.5;
+    color: var(--sidebar-muted);
+    background: rgba(96, 165, 250, 0.1);
+    border: 1px solid rgba(96, 165, 250, 0.2);
+    border-radius: 3px;
+    padding: 1px 6px;
+    line-height: 1.6;
   }
 
   @media print {
-    .skills-grid { gap: 6px 12px; }
-    .tag { font-size: 7.5pt; }
-    .skill-category { font-size: 7.5pt; }
+    .sidebar-section { padding: 14px 16px; }
+    h2 { font-size: 7pt; margin-bottom: 9px; }
+    .skill-category { font-size: 7pt; }
+    .tag { font-size: 7pt; }
+    .skill-group { margin-bottom: 7px; }
   }
 </style>
