@@ -13,14 +13,16 @@ import cv from '../../cv.json';
 
 <Layout title={`${cv.personal.name} – CV`}>
   <main class="cv-page">
-    <Header personal={cv.personal} />
-    <div class="cv-body">
-      <Summary summary={cv.summary} />
+    <aside class="cv-sidebar">
+      <Header personal={cv.personal} />
       <Skills skills={cv.skills} />
+      <Languages languages={cv.languages} />
+    </aside>
+    <div class="cv-main">
+      <Summary summary={cv.summary} />
       <Experience experience={cv.experience} />
       <Education education={cv.education} />
       <Certifications certifications={cv.certifications} />
-      <Languages languages={cv.languages} />
     </div>
   </main>
 
@@ -38,7 +40,7 @@ import cv from '../../cv.json';
   }
 
   .print-btn {
-    background: var(--color-primary);
+    background: var(--sidebar-bg);
     color: #fff;
     border: none;
     padding: 11px 32px;
@@ -48,12 +50,12 @@ import cv from '../../cv.json';
     border-radius: 8px;
     cursor: pointer;
     letter-spacing: 0.05em;
-    box-shadow: 0 4px 14px rgba(30, 58, 95, 0.35);
+    box-shadow: 0 4px 14px rgba(13, 27, 42, 0.4);
     transition: background 0.2s, transform 0.1s;
   }
 
   .print-btn:hover {
-    background: var(--color-primary-light);
+    background: var(--color-primary);
     transform: translateY(-1px);
   }
 
