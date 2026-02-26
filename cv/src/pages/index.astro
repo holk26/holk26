@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Summary from '../components/Summary.astro';
+import Skills from '../components/Skills.astro';
+import Experience from '../components/Experience.astro';
+import Education from '../components/Education.astro';
+import Certifications from '../components/Certifications.astro';
+import Languages from '../components/Languages.astro';
+
+import cv from '../../cv.json';
+---
+
+<Layout title={`${cv.personal.name} – CV`}>
+  <main class="cv-page">
+    <Header personal={cv.personal} />
+    <Summary summary={cv.summary} />
+    <Skills skills={cv.skills} />
+    <Experience experience={cv.experience} />
+    <Education education={cv.education} />
+    <Certifications certifications={cv.certifications} />
+    <Languages languages={cv.languages} />
+  </main>
+
+  <!-- Print button – hidden when printing -->
+  <div class="print-btn-wrapper no-print">
+    <button onclick="window.print()" class="print-btn">🖨 Print / Save as PDF</button>
+  </div>
+</Layout>
+
+<style>
+  .print-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 32px;
+  }
+
+  .print-btn {
+    background: var(--color-accent);
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    font-size: 10pt;
+    font-family: var(--font-main);
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    letter-spacing: 0.04em;
+    box-shadow: 0 2px 8px rgba(26, 58, 92, 0.3);
+    transition: background 0.2s;
+  }
+
+  .print-btn:hover {
+    background: var(--color-accent-light);
+  }
+
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+</style>

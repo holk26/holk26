@@ -1,0 +1,103 @@
+---
+interface ExperienceItem {
+  title: string;
+  company: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  bullets: string[];
+}
+
+interface Props {
+  experience: ExperienceItem[];
+}
+const { experience } = Astro.props;
+---
+
+<section>
+  <h2>Professional Experience</h2>
+  {
+    experience.map((job) => (
+      <div class="job">
+        <div class="job-header">
+          <div class="job-left">
+            <h3>{job.title}</h3>
+            <span class="company">
+              {job.company} — {job.location}
+            </span>
+          </div>
+          <span class="dates">
+            {job.startDate} – {job.endDate}
+          </span>
+        </div>
+        <ul class="bullets">
+          {job.bullets.map((b) => (
+            <li>{b}</li>
+          ))}
+        </ul>
+      </div>
+    ))
+  }
+</section>
+
+<style>
+  .job {
+    margin-bottom: 12px;
+  }
+
+  .job:last-child {
+    margin-bottom: 0;
+  }
+
+  .job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+    margin-bottom: 4px;
+  }
+
+  .job-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .company {
+    font-size: 9.5pt;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .dates {
+    font-size: 9pt;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  .bullets {
+    padding-left: 14px;
+  }
+
+  .bullets li {
+    font-size: 9.5pt;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    position: relative;
+  }
+
+  .bullets li::before {
+    content: '▪';
+    position: absolute;
+    left: -12px;
+    color: var(--color-accent);
+    font-size: 8pt;
+    top: 1px;
+  }
+
+  @media print {
+    .job { margin-bottom: 8px; }
+  }
+</style>

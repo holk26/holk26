@@ -1,0 +1,153 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Professional CV – Homero Cabrera Araque" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  /* ── Reset & Base ── */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --color-accent: #1a3a5c;
+    --color-accent-light: #2a5298;
+    --color-text: #1a1a1a;
+    --color-text-muted: #555;
+    --color-border: #d1d5db;
+    --color-bg: #ffffff;
+    --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
+    --page-padding: 18mm 18mm 16mm 18mm;
+  }
+
+  html,
+  body {
+    background: #e5e7eb;
+    font-family: var(--font-main);
+    font-size: 11pt;
+    color: var(--color-text);
+    line-height: 1.45;
+  }
+
+  /* ── Page wrapper ── */
+  .cv-page {
+    background: var(--color-bg);
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 24px auto;
+    padding: var(--page-padding);
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12);
+  }
+
+  /* ── Typography ── */
+  h1 {
+    font-size: 22pt;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--color-accent);
+    line-height: 1.1;
+  }
+
+  h2 {
+    font-size: 10pt;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 6px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid var(--color-accent);
+  }
+
+  h3 {
+    font-size: 10.5pt;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 1px;
+  }
+
+  p, li {
+    font-size: 10pt;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  a {
+    color: var(--color-accent-light);
+    text-decoration: none;
+  }
+
+  /* ── Section spacing ── */
+  section {
+    margin-bottom: 14px;
+  }
+
+  /* ── Print / PDF ── */
+  @media print {
+    html,
+    body {
+      background: #fff;
+      font-size: 10pt;
+    }
+
+    .cv-page {
+      margin: 0;
+      padding: 12mm 14mm 12mm 14mm;
+      box-shadow: none;
+      max-width: 100%;
+    }
+
+    h1 { font-size: 20pt; }
+    h2 { font-size: 9pt; }
+    h3 { font-size: 10pt; }
+    p, li { font-size: 9.5pt; }
+
+    section {
+      margin-bottom: 10px;
+      page-break-inside: avoid;
+    }
+
+    a {
+      color: var(--color-accent-light);
+      text-decoration: none;
+    }
+  }
+
+  @page {
+    size: letter;
+    margin: 0;
+  }
+</style>

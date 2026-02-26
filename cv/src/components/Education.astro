@@ -1,0 +1,81 @@
+---
+interface EducationItem {
+  degree: string;
+  institution: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  notes?: string;
+}
+
+interface Props {
+  education: EducationItem[];
+}
+const { education } = Astro.props;
+---
+
+<section>
+  <h2>Education</h2>
+  {
+    education.map((edu) => (
+      <div class="edu-item">
+        <div class="edu-header">
+          <div class="edu-left">
+            <h3>{edu.degree}</h3>
+            <span class="institution">
+              {edu.institution} — {edu.location}
+            </span>
+          </div>
+          <span class="dates">
+            {edu.startDate} – {edu.endDate}
+          </span>
+        </div>
+        {edu.notes && <p class="notes">{edu.notes}</p>}
+      </div>
+    ))
+  }
+</section>
+
+<style>
+  .edu-item {
+    margin-bottom: 10px;
+  }
+
+  .edu-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2px 8px;
+    margin-bottom: 2px;
+  }
+
+  .edu-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .institution {
+    font-size: 9.5pt;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .dates {
+    font-size: 9pt;
+    color: var(--color-text-muted);
+    white-space: nowrap;
+    font-weight: 500;
+    flex-shrink: 0;
+  }
+
+  .notes {
+    font-size: 9pt;
+    color: var(--color-text-muted);
+    margin-top: 2px;
+  }
+</style>

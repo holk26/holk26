@@ -1,0 +1,75 @@
+---
+interface Props {
+  personal: {
+    name: string;
+    location: string;
+    phone: string;
+    email: string;
+    linkedin: string;
+    github: string;
+    workAuthorization: string;
+  };
+}
+const { personal } = Astro.props;
+---
+
+<header class="cv-header">
+  <h1>{personal.name}</h1>
+  <div class="contact-row">
+    <span>{personal.location}</span>
+    <span class="sep">·</span>
+    <a href={`tel:${personal.phone.replace(/\s/g,'')}`}>{personal.phone}</a>
+    <span class="sep">·</span>
+    <a href={`mailto:${personal.email}`}>{personal.email}</a>
+    <span class="sep">·</span>
+    <a href={personal.linkedin} target="_blank" rel="noopener">LinkedIn</a>
+    <span class="sep">·</span>
+    <a href={personal.github} target="_blank" rel="noopener">GitHub</a>
+  </div>
+  <div class="permit-badge">{personal.workAuthorization}</div>
+</header>
+
+<style>
+  .cv-header {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--color-accent);
+  }
+
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 0;
+    align-items: center;
+    margin-top: 6px;
+    font-size: 9.5pt;
+    color: var(--color-text-muted);
+  }
+
+  .contact-row a {
+    color: var(--color-accent-light);
+  }
+
+  .sep {
+    margin: 0 6px;
+    color: var(--color-border);
+  }
+
+  .permit-badge {
+    display: inline-block;
+    margin-top: 6px;
+    font-size: 8.5pt;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-bg);
+    background: var(--color-accent);
+    padding: 2px 8px;
+    border-radius: 3px;
+  }
+
+  @media print {
+    .contact-row { font-size: 9pt; }
+    .permit-badge { font-size: 8pt; }
+  }
+</style>
