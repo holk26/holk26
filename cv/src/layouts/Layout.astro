@@ -38,23 +38,28 @@ const { title } = Astro.props;
   }
 
   :root {
-    --color-accent: #1a3a5c;
-    --color-accent-light: #2a5298;
-    --color-text: #1a1a1a;
-    --color-text-muted: #555;
-    --color-border: #d1d5db;
+    --color-primary: #1e3a5f;
+    --color-primary-light: #2563eb;
+    --color-accent: #0ea5e9;
+    --color-text: #0f172a;
+    --color-text-muted: #475569;
+    --color-border: #e2e8f0;
     --color-bg: #ffffff;
+    --color-bg-subtle: #f0f7ff;
+    --color-tag-bg: #dbeafe;
+    --color-tag-text: #1e40af;
     --font-main: 'Inter', 'Segoe UI', Arial, sans-serif;
-    --page-padding: 18mm 18mm 16mm 18mm;
+    /* keep backward-compat aliases */
+    --color-accent-light: var(--color-primary-light);
   }
 
   html,
   body {
-    background: #e5e7eb;
+    background: #e8eef6;
     font-family: var(--font-main);
     font-size: 11pt;
     color: var(--color-text);
-    line-height: 1.45;
+    line-height: 1.5;
   }
 
   /* ── Page wrapper ── */
@@ -62,29 +67,36 @@ const { title } = Astro.props;
     background: var(--color-bg);
     max-width: 210mm;
     min-height: 297mm;
-    margin: 24px auto;
-    padding: var(--page-padding);
-    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12);
+    margin: 28px auto;
+    box-shadow: 0 8px 40px rgba(15, 23, 42, 0.15);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  /* ── Main content area (below header) ── */
+  .cv-body {
+    padding: 18px 22mm 18px 22mm;
   }
 
   /* ── Typography ── */
   h1 {
-    font-size: 22pt;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    color: var(--color-accent);
+    font-size: 26pt;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--color-bg);
     line-height: 1.1;
   }
 
   h2 {
-    font-size: 10pt;
+    font-size: 8.5pt;
     font-weight: 700;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--color-accent);
-    margin-bottom: 6px;
-    padding-bottom: 4px;
-    border-bottom: 2px solid var(--color-accent);
+    color: var(--color-primary);
+    margin-bottom: 8px;
+    padding-left: 10px;
+    border-left: 3px solid var(--color-accent);
+    border-bottom: none;
   }
 
   h3 {
@@ -95,9 +107,9 @@ const { title } = Astro.props;
   }
 
   p, li {
-    font-size: 10pt;
+    font-size: 9.5pt;
     color: var(--color-text-muted);
-    line-height: 1.5;
+    line-height: 1.55;
   }
 
   ul {
@@ -106,13 +118,17 @@ const { title } = Astro.props;
   }
 
   a {
-    color: var(--color-accent-light);
+    color: var(--color-primary-light);
     text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 
   /* ── Section spacing ── */
   section {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
 
   /* ── Print / PDF ── */
@@ -125,15 +141,20 @@ const { title } = Astro.props;
 
     .cv-page {
       margin: 0;
-      padding: 12mm 14mm 12mm 14mm;
       box-shadow: none;
+      border-radius: 0;
       max-width: 100%;
+      min-height: auto;
     }
 
-    h1 { font-size: 20pt; }
-    h2 { font-size: 9pt; }
-    h3 { font-size: 10pt; }
-    p, li { font-size: 9.5pt; }
+    .cv-body {
+      padding: 10mm 14mm 10mm 14mm;
+    }
+
+    h1 { font-size: 22pt; }
+    h2 { font-size: 8pt; }
+    h3 { font-size: 9.5pt; }
+    p, li { font-size: 9pt; }
 
     section {
       margin-bottom: 10px;
@@ -141,7 +162,7 @@ const { title } = Astro.props;
     }
 
     a {
-      color: var(--color-accent-light);
+      color: var(--color-primary-light);
       text-decoration: none;
     }
   }

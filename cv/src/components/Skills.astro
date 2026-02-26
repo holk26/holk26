@@ -11,8 +11,12 @@ const { skills } = Astro.props;
     {
       Object.entries(skills).map(([category, items]) => (
         <div class="skill-group">
-          <span class="skill-category">{category}:</span>
-          <span class="skill-items">{items.join(' · ')}</span>
+          <span class="skill-category">{category}</span>
+          <div class="tag-list">
+            {items.map((item) => (
+              <span class="tag">{item}</span>
+            ))}
+          </div>
         </div>
       ))
     }
@@ -21,23 +25,45 @@ const { skills } = Astro.props;
 
 <style>
   .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 16px;
+  }
+
+  .skill-group {
     display: flex;
     flex-direction: column;
     gap: 4px;
   }
 
-  .skill-group {
-    font-size: 9.5pt;
+  .skill-category {
+    font-size: 8pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-primary);
+  }
+
+  .tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .tag {
+    display: inline-block;
+    font-size: 8pt;
+    font-weight: 500;
+    color: var(--color-tag-text);
+    background: var(--color-tag-bg);
+    border-radius: 4px;
+    padding: 2px 7px;
     line-height: 1.5;
   }
 
-  .skill-category {
-    font-weight: 600;
-    color: var(--color-text);
-    margin-right: 4px;
-  }
-
-  .skill-items {
-    color: var(--color-text-muted);
+  @media print {
+    .skills-grid { gap: 6px 12px; }
+    .tag { font-size: 7.5pt; }
+    .skill-category { font-size: 7.5pt; }
   }
 </style>

@@ -16,33 +16,53 @@ const { education } = Astro.props;
 
 <section>
   <h2>Education</h2>
-  {
-    education.map((edu) => (
-      <div class="edu-item">
-        <div class="edu-header">
-          <div class="edu-left">
-            <h3>{edu.degree}</h3>
-            <span class="institution">
-              {edu.institution} — {edu.location}
-            </span>
+  <div class="timeline">
+    {
+      education.map((edu) => (
+        <div class="edu-item">
+          <div class="edu-dot" aria-hidden="true"></div>
+          <div class="edu-content">
+            <div class="edu-header">
+              <div class="edu-left">
+                <h3>{edu.degree}</h3>
+                <span class="institution">{edu.institution} &mdash; {edu.location}</span>
+              </div>
+              <span class="dates">{edu.startDate} – {edu.endDate}</span>
+            </div>
+            {edu.notes && <p class="notes">{edu.notes}</p>}
           </div>
-          <span class="dates">
-            {edu.startDate} – {edu.endDate}
-          </span>
         </div>
-        {edu.notes && <p class="notes">{edu.notes}</p>}
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
 </section>
 
 <style>
+  .timeline {
+    position: relative;
+    padding-left: 18px;
+    border-left: 2px solid var(--color-border);
+  }
+
   .edu-item {
-    margin-bottom: 10px;
+    position: relative;
+    margin-bottom: 12px;
   }
 
   .edu-item:last-child {
     margin-bottom: 0;
+  }
+
+  .edu-dot {
+    position: absolute;
+    left: -25px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 2px solid var(--color-bg);
+    box-shadow: 0 0 0 2px var(--color-accent);
   }
 
   .edu-header {
@@ -51,7 +71,7 @@ const { education } = Astro.props;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 2px 8px;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
   }
 
   .edu-left {
@@ -60,22 +80,33 @@ const { education } = Astro.props;
   }
 
   .institution {
-    font-size: 9.5pt;
+    font-size: 9pt;
     color: var(--color-text-muted);
     font-style: italic;
+    margin-top: 1px;
   }
 
   .dates {
-    font-size: 9pt;
-    color: var(--color-text-muted);
+    font-size: 8.5pt;
+    color: var(--color-primary-light);
     white-space: nowrap;
-    font-weight: 500;
+    font-weight: 600;
     flex-shrink: 0;
+    background: var(--color-bg-subtle);
+    padding: 1px 8px;
+    border-radius: 20px;
+    margin-top: 2px;
   }
 
   .notes {
-    font-size: 9pt;
+    font-size: 8.5pt;
     color: var(--color-text-muted);
     margin-top: 2px;
+  }
+
+  @media print {
+    .edu-item { margin-bottom: 8px; }
+    .dates { background: none; padding: 0; font-size: 8pt; }
+    .edu-dot { box-shadow: 0 0 0 1.5px var(--color-accent); }
   }
 </style>

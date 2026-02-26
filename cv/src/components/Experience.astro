@@ -16,37 +16,57 @@ const { experience } = Astro.props;
 
 <section>
   <h2>Professional Experience</h2>
-  {
-    experience.map((job) => (
-      <div class="job">
-        <div class="job-header">
-          <div class="job-left">
-            <h3>{job.title}</h3>
-            <span class="company">
-              {job.company} — {job.location}
-            </span>
+  <div class="timeline">
+    {
+      experience.map((job) => (
+        <div class="job">
+          <div class="job-dot" aria-hidden="true"></div>
+          <div class="job-content">
+            <div class="job-header">
+              <div class="job-left">
+                <h3>{job.title}</h3>
+                <span class="company">{job.company} &mdash; {job.location}</span>
+              </div>
+              <span class="dates">{job.startDate} – {job.endDate}</span>
+            </div>
+            <ul class="bullets">
+              {job.bullets.map((b) => (
+                <li>{b}</li>
+              ))}
+            </ul>
           </div>
-          <span class="dates">
-            {job.startDate} – {job.endDate}
-          </span>
         </div>
-        <ul class="bullets">
-          {job.bullets.map((b) => (
-            <li>{b}</li>
-          ))}
-        </ul>
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
 </section>
 
 <style>
+  .timeline {
+    position: relative;
+    padding-left: 18px;
+    border-left: 2px solid var(--color-border);
+  }
+
   .job {
-    margin-bottom: 12px;
+    position: relative;
+    margin-bottom: 14px;
   }
 
   .job:last-child {
     margin-bottom: 0;
+  }
+
+  .job-dot {
+    position: absolute;
+    left: -25px;
+    top: 4px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 2px solid var(--color-bg);
+    box-shadow: 0 0 0 2px var(--color-accent);
   }
 
   .job-header {
@@ -55,7 +75,7 @@ const { experience } = Astro.props;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 2px 8px;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 
   .job-left {
@@ -64,17 +84,22 @@ const { experience } = Astro.props;
   }
 
   .company {
-    font-size: 9.5pt;
+    font-size: 9pt;
     color: var(--color-text-muted);
     font-style: italic;
+    margin-top: 1px;
   }
 
   .dates {
-    font-size: 9pt;
-    color: var(--color-text-muted);
+    font-size: 8.5pt;
+    color: var(--color-primary-light);
     white-space: nowrap;
-    font-weight: 500;
+    font-weight: 600;
     flex-shrink: 0;
+    background: var(--color-bg-subtle);
+    padding: 1px 8px;
+    border-radius: 20px;
+    margin-top: 2px;
   }
 
   .bullets {
@@ -82,22 +107,24 @@ const { experience } = Astro.props;
   }
 
   .bullets li {
-    font-size: 9.5pt;
+    font-size: 9pt;
     color: var(--color-text-muted);
-    line-height: 1.5;
+    line-height: 1.55;
     position: relative;
   }
 
   .bullets li::before {
-    content: '▪';
+    content: '▸';
     position: absolute;
-    left: -12px;
+    left: -13px;
     color: var(--color-accent);
-    font-size: 8pt;
-    top: 1px;
+    font-size: 9pt;
+    line-height: 1.55;
   }
 
   @media print {
-    .job { margin-bottom: 8px; }
+    .job { margin-bottom: 9px; }
+    .dates { background: none; padding: 0; font-size: 8pt; }
+    .job-dot { box-shadow: 0 0 0 1.5px var(--color-accent); }
   }
 </style>
